@@ -53,9 +53,9 @@ def main():
     args = parser.parse_args()
     df = load_data(args.input)
     df = preprocess(df)
-    if 'selling_price' in df.columns:
-        y = df['selling_price']
-        X = df.drop(columns=['selling_price'])
+    if 'Price' in df.columns:
+        y = df['Price']
+        X = df.drop(columns=['Price'])
     else:
         raise SystemExit('Please ensure file has selling_price column.')
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
