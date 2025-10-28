@@ -1,9 +1,21 @@
 # AIIS-WH2 — Car Price Prediction (CarDekho dataset)
 
+## 👨‍💻 Author
+**Ben Chen**
+- GitHub: [@benchen1981](https://github.com/benchen1981)
+- Email: benchen1981@gmail.com
+
 **Dataset:** Vehicle Dataset from CarDekho (Kaggle)  
 **Source:** https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho
 
-Short: End-to-end project using CRISP-DM and Spec Driven Development (Open Spec). Includes notebook, scripts, Streamlit app (Replit-ready), Dockerfile, and automated deployment scripts.
+Short: 
+End-to-end project using CRISP-DM and Spec Driven Development (Open Spec). 
+Includes notebook, scripts, Streamlit app (Replit-ready), Dockerfile, and automated deployment scripts.
+- **GPT 輔助內容**: 本專案的核心架構、程式碼實作、以及分析流程均由 GPT 輔助完成
+- **NotebookLM 摘要**: 研究摘要基於 NotebookLM 對網路上線性回歸分析相關解法的研究
+- **Kaggle Community**: For providing the Boston Housing Dataset
+- **Scikit-learn Team**: For the excellent machine learning library
+- **CRISP-DM Methodology**: For the systematic data mining process
 
 ## Quick start (local)
 1. Download dataset from Kaggle and place as `data/vehicle_data.csv` (instructions below).
