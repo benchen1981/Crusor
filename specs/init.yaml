@@ -1,0 +1,6 @@
+
+INIT:
+  project: AIIS-WH2
+  owner: benchen1981
+  description: End-to-end Car Price Prediction using CarDekho dataset. Follows CRISP-DM and Spec Driven Development.
+  created: 2025-10-28

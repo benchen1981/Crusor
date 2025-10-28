@@ -1,0 +1,8 @@
+
+REQUIREMENTS:
+  - dataset: Vehicle Dataset from Cardekho (Kaggle)
+  - models: Linear Regression, Multiple Linear Regression, Auto Regression
+  - outputs:
+      - evaluation report (notebook)
+      - streamlit app for inference
+      - dockerized deployment

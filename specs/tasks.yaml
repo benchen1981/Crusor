@@ -1,0 +1,14 @@
+
+TASKS:
+  - id: T1
+    title: Download dataset
+  - id: T2
+    title: Implement data loader and EDA
+  - id: T3
+    title: Implement feature selection (RFE, correlation)
+  - id: T4
+    title: Implement Linear Regression & AutoRegression
+  - id: T5
+    title: Create Streamlit inference app
+  - id: T6
+    title: Create deployment scripts and Dockerfile

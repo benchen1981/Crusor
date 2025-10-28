@@ -1,0 +1,1 @@
+PowerPoint slides should include CRISP-DM steps, Results, Plots, and explicit labels for 'GPT 輔助內容' & 'NotebookLM 摘要'. Generate using python-pptx if desired.

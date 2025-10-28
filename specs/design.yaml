@@ -1,0 +1,13 @@
+
+DESIGN:
+  pipeline:
+    - data_ingest
+    - preprocess
+    - feature_selection
+    - modeling
+    - evaluation
+    - deployment
+  artifacts:
+    - notebooks/analysis.ipynb
+    - src/pipeline.py
+    - streamlit_app/streamlit_app.py

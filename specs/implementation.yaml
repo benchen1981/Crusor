@@ -1,0 +1,4 @@
+
+IMPLEMENTATION:
+  language: python
+  entrypoint: notebooks/analysis.ipynb and src/pipeline.py
