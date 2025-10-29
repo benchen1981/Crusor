@@ -10,7 +10,8 @@
 **資料集：** Vehicle Dataset from CarDekho (Kaggle)
 **資料來源：** https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho
 
-簡介：使用 CRISP-DM 和規範驅動開發（Open Spec）的端對端專案。包含 Notebook、Python Script、Streamlit Replit-ready）、Dockerfile 和自動化部署Script。
+**專案目標/簡介：** Vehicle Dataset from CarDekho (Kaggle)
+  建構一套「二手車價預測自動化系統」，涵蓋資料前處理、特徵工程、線性回歸建模、多模型比較、模型評估（含預測/信賴區間），使用 CRISP-DM 和規範驅動開發（Open Spec）的端對端專案，產生自動化Web部署（Streamlit）、一鍵打包及GitHub/Replit自動發佈。
 
 - **GPT 輔助內容**: 本專案的核心架構、程式碼實作、以及分析流程均由 GPT 輔助完成
 - **NotebookLM 摘要**: 研究摘要基於 NotebookLM 對網路上線性回歸分析相關解法的研究
@@ -18,21 +19,45 @@
 - **Scikit-learn Team**: 提供優秀的機器學習庫
 - **CRISP-DM Methodology**: 提供系統性的資料探勘流程
 
-## 快速啟動 (本機端)
-1. 從 Kaggle 下載資料集，並將其放置在 `data/vehicle_data.csv` 目錄下
-2. 建立虛擬環境並安裝相依性
-3. 執行 notebook 或 pipeline
+## 技術重點
+- pandas/sklearn資料分析建模
+- matplotlib/seaborn數據視覺化
+- Streamlit互動式Web應用
+- PowerPoint報告/專案流程文件自動產出
+- SDD Spec Driven、CRISP-DM數據科學全流程
 
-## Replit / Streamlit Cloud
-此程式庫包含 `streamlit_app/streamlit_app.py` 檔案，並在 Replit 上部署
+## 如何運行
+1. 下載Kaggle資料集並放置 `data/CAR DETAILS FROM CAR DEKHO.csv`
+2. 安裝依賴：`pip install -r requirements.txt`
+3. 啟動Web：`bash auto_deploy.sh` 或 `streamlit run Streamlit_app.py`
+4. 查看 img/prediction_results.png 取得預測結果圖表
+
+## Replit 執行
+點擊 README 上方「Run on Replit」按鈕一鍵啟動體驗。
+
+## 1.資料集取得方式
+  1.登入Kaggle並打開連結
+  2.點擊「Download」取得CSV檔案
+  3.將檔案放置專案 data/ 資料夾
 
 ## 目錄內容
-- `/notebooks/analysis.ipynb` — 包含 CRISP-DM 步驟和完整建模流程（線性回歸、多元線性回歸、自回歸）、特徵選擇、模型評估和圖表（含置信區間/預測區間）的 Jupyter notebook.
-- `/src/pipeline.py` — 該 notebook 的可複現程式版本。.
-- `/streamlit_app/streamlit_app.py` — 用於快速預測的 Streamlit 使用者介面.
-- `/specs` — Open Spec SDD files (INIT → REQUIREMENTS → DESIGN → TASKS → IMPLEMENTATION).
-- `/deploy` — Dockerfile 和部署程式.
-- `/reports` — PDF and PowerPoint 範本.
+AIIS-WH2/
+│
+├── README.md                  # 專案說明書（含Replit按鈕/圖示）
+├── SPEC.md                    # SDD專案規格
+├── CRISP_DM_NOTEBOOK.ipynb    # 完整流程Jupyter Notebook
+├── Streamlit_app.py           # Streamlit一鍵啟動版
+├── auto_deploy.sh             # 自動部署命令、啟動腳本
+├── requirements.txt           # 依賴Python套件清單
+├── data/
+│   └── CAR DETAILS FROM CAR DEKHO.csv
+├── img/
+│   └── 預測結果圖表.png
+├── reports/
+│   ├── summary_report.pptx    # 總結報告與GPT、NotebookLM標註
+│   └── session_dialog.pdf     # 對話過程匯出PDF
+└── spec/
+    └── OpenSpec.yaml          # Open Spec SDD
 
 ## ChatGPT Prompt 內容
 Task：制作一個Python軟體開發專案, 包含生成自動部署命令腳本及一鍵啟動版
@@ -55,7 +80,6 @@ Task：制作一個Python軟體開發專案, 包含生成自動部署命令腳�
 7.將整個專案打包成 zip 並提供下載。
 8.幫我建立 GitHub repo 並推上去（GitHub 使用者名稱:benchen1981,個 repo 名稱:AIIS-WH2
 9.在 notebook 中執行完整 pipeline
-
 
 ## MIT License
 Copyright (c) 2025 Ben Chen
