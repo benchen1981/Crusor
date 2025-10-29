@@ -1,23 +1,24 @@
-# AIIS-WH2 — Car Price Prediction (CarDekho dataset)
+# AIIS-WH2 — 汽車價格預測
 
-## 👨‍💻 Author
-**Ben Chen**
+## 👨‍💻 作者
+**陳宥興 Ben Chen**
+**學號：5114050015**
 - GitHub: [@benchen1981](https://github.com/benchen1981)
 - Email: benchen1981@gmail.com
+- Supervising professor: HUAN CHEN
 
-**Dataset:** Vehicle Dataset from CarDekho (Kaggle)  
-**Source:** https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho
+**資料集：** Vehicle Dataset from CarDekho (Kaggle) 
+**資料來源：** https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho
 
-Short: 
-End-to-end project using CRISP-DM and Spec Driven Development (Open Spec). 
-Includes notebook, scripts, Streamlit app (Replit-ready), Dockerfile, and automated deployment scripts.
+簡介：使用 CRISP-DM 和規範驅動開發（Open Spec）的端對端專案。包含 Notebook、Python Script、Streamlit Replit-ready）、Dockerfile 和自動化部署Script。
+
 - **GPT 輔助內容**: 本專案的核心架構、程式碼實作、以及分析流程均由 GPT 輔助完成
 - **NotebookLM 摘要**: 研究摘要基於 NotebookLM 對網路上線性回歸分析相關解法的研究
-- **Kaggle Community**: For providing the Boston Housing Dataset
-- **Scikit-learn Team**: For the excellent machine learning library
-- **CRISP-DM Methodology**: For the systematic data mining process
+- **Kaggle Community**: 提供車輛資料集
+- **Scikit-learn Team**: 提供優秀的機器學習庫
+- **CRISP-DM Methodology**: 提供系統性的資料探勘流程
 
-## Quick start (local)
+## 快速啟動 (本機端)
 1. Download dataset from Kaggle and place as `data/vehicle_data.csv` (instructions below).
 2. Create virtualenv and install dependencies:
 ```bash
